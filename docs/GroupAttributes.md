@@ -1,0 +1,25 @@
+# ProcessMakerApi.GroupAttributes
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**code** | **String** |  | 
+**title** | **String** |  | 
+**description** | **String** |  | [optional] 
+**status** | **String** |  | [optional] [default to &#39;ACTIVE&#39;]
+**users** | **[String]** | User ID&#39;s array | [optional] 
+**createdAt** | [**Date**](DateTime.md) |  | [optional] 
+**updatedAt** | [**Date**](DateTime.md) |  | [optional] 
+
+
+<a name="StatusEnum"></a>
+## Enum: StatusEnum
+
+
+* `ACTIVE` (value: `"ACTIVE"`)
+
+* `INACTIVE` (value: `"INACTIVE"`)
+
+
+
+
