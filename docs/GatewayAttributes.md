@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 **processId** | **String** |  | 
 **type** | **String** |  | 
 **direction** | **String** |  | [optional] 
-**createdAt** | [**Date**](DateTime.md) |  | [optional] 
-**updatedAt** | [**Date**](DateTime.md) |  | [optional] 
+**createdAt** | **String** |  | [optional] 
+**updatedAt** | **String** |  | [optional] 
 
 
 <a name="TypeEnum"></a>

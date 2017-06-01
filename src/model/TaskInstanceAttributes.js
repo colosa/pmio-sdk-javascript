@@ -25,18 +25,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DateTime'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./DateTime'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.ProcessMakerApi) {
       root.ProcessMakerApi = {};
     }
-    root.ProcessMakerApi.TaskInstanceAttributes = factory(root.ProcessMakerApi.ApiClient, root.ProcessMakerApi.DateTime);
+    root.ProcessMakerApi.TaskInstanceAttributes = factory(root.ProcessMakerApi.ApiClient);
   }
-}(this, function(ApiClient, DateTime) {
+}(this, function(ApiClient) {
   'use strict';
 
 
@@ -109,19 +109,19 @@
         obj['priority'] = ApiClient.convertToType(data['priority'], 'String');
       }
       if (data.hasOwnProperty('delegate_date')) {
-        obj['delegate_date'] = 'Date'.constructFromObject(data['delegate_date']);
+        obj['delegate_date'] = ApiClient.convertToType(data['delegate_date'], 'String');
       }
       if (data.hasOwnProperty('start_date')) {
-        obj['start_date'] = 'Date'.constructFromObject(data['start_date']);
+        obj['start_date'] = ApiClient.convertToType(data['start_date'], 'String');
       }
       if (data.hasOwnProperty('finish_date')) {
-        obj['finish_date'] = 'Date'.constructFromObject(data['finish_date']);
+        obj['finish_date'] = ApiClient.convertToType(data['finish_date'], 'String');
       }
       if (data.hasOwnProperty('task_due_date')) {
-        obj['task_due_date'] = 'Date'.constructFromObject(data['task_due_date']);
+        obj['task_due_date'] = ApiClient.convertToType(data['task_due_date'], 'String');
       }
       if (data.hasOwnProperty('risk_date')) {
-        obj['risk_date'] = 'Date'.constructFromObject(data['risk_date']);
+        obj['risk_date'] = ApiClient.convertToType(data['risk_date'], 'String');
       }
       if (data.hasOwnProperty('duration')) {
         obj['duration'] = ApiClient.convertToType(data['duration'], 'Number');
@@ -136,10 +136,10 @@
         obj['content'] = ApiClient.convertToType(data['content'], 'String');
       }
       if (data.hasOwnProperty('created_at')) {
-        obj['created_at'] = 'Date'.constructFromObject(data['created_at']);
+        obj['created_at'] = ApiClient.convertToType(data['created_at'], 'String');
       }
       if (data.hasOwnProperty('updated_at')) {
-        obj['updated_at'] = 'Date'.constructFromObject(data['updated_at']);
+        obj['updated_at'] = ApiClient.convertToType(data['updated_at'], 'String');
       }
     }
     return obj;
@@ -172,23 +172,23 @@
    */
   exports.prototype['priority'] = '3';
   /**
-   * @member {module:model/Date} delegate_date
+   * @member {String} delegate_date
    */
   exports.prototype['delegate_date'] = undefined;
   /**
-   * @member {module:model/Date} start_date
+   * @member {String} start_date
    */
   exports.prototype['start_date'] = undefined;
   /**
-   * @member {module:model/Date} finish_date
+   * @member {String} finish_date
    */
   exports.prototype['finish_date'] = undefined;
   /**
-   * @member {module:model/Date} task_due_date
+   * @member {String} task_due_date
    */
   exports.prototype['task_due_date'] = undefined;
   /**
-   * @member {module:model/Date} risk_date
+   * @member {String} risk_date
    */
   exports.prototype['risk_date'] = undefined;
   /**
@@ -208,11 +208,11 @@
    */
   exports.prototype['content'] = undefined;
   /**
-   * @member {module:model/Date} created_at
+   * @member {String} created_at
    */
   exports.prototype['created_at'] = undefined;
   /**
-   * @member {module:model/Date} updated_at
+   * @member {String} updated_at
    */
   exports.prototype['updated_at'] = undefined;
 

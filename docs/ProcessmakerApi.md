@@ -1,6 +1,6 @@
 # ProcessMakerApi.ProcessmakerApi
 
-All URIs are relative to *http://localhost/api/v1*
+All URIs are relative to *https://CHANGEME.api.processmaker.io/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -85,18 +85,12 @@ Method | HTTP request | Description
 
 
 
-This method creates a new client for the user
+This method creates a new Oauth client for the user
 
 ### Example
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -104,9 +98,9 @@ PasswordGrant.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new ProcessMakerApi.ProcessmakerApi();
 
-var userId = "userId_example"; // String | ID of the user related to the client
+var userId = "userId_example"; // String | ID of the user related to the Oauth client
 
-var clientCreateItem = new ProcessMakerApi.ClientCreateItem(); // ClientCreateItem | JSON API with the Client object to add
+var clientCreateItem = new ProcessMakerApi.ClientCreateItem(); // ClientCreateItem | JSON API with the Oauth Client object to add
 
 
 var callback = function(error, data, response) {
@@ -123,8 +117,8 @@ apiInstance.addClient(userId, clientCreateItem, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **String**| ID of the user related to the client | 
- **clientCreateItem** | [**ClientCreateItem**](ClientCreateItem.md)| JSON API with the Client object to add | 
+ **userId** | **String**| ID of the user related to the Oauth client | 
+ **clientCreateItem** | [**ClientCreateItem**](ClientCreateItem.md)| JSON API with the Oauth Client object to add | 
 
 ### Return type
 
@@ -132,7 +126,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -151,12 +145,6 @@ This method creates the new event.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -192,7 +180,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -211,12 +199,6 @@ This method is intended for creating a new Event connector.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -255,7 +237,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -274,12 +256,6 @@ This method creates a new Sequence flow
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -315,7 +291,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -334,12 +310,6 @@ This method creates a new gateway.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -375,7 +345,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -394,12 +364,6 @@ This method creates a new group.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -432,7 +396,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -451,12 +415,6 @@ This method assigns group(s) to the choosen task
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -495,7 +453,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -514,12 +472,6 @@ This method creates a new Input/Output object
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -558,7 +510,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -577,12 +529,6 @@ This method creates a new instance.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -618,7 +564,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -637,12 +583,6 @@ This method creates a new process
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -675,7 +615,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -694,12 +634,6 @@ This method creates a new task.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -735,7 +669,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -754,12 +688,6 @@ This method is intended for creating a new task connector.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -798,7 +726,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -817,12 +745,6 @@ This method creates a new user in the system.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -855,7 +777,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -874,12 +796,6 @@ This method adds one or more new users to a group.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -915,7 +831,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -928,18 +844,12 @@ Name | Type | Description  | Notes
 
 
 
-This method deletes a client using the client and user IDs.
+This method deletes an Oauth client using the client and user IDs.
 
 ### Example
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -975,7 +885,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -994,12 +904,6 @@ This method deletes an event using the event ID and process ID
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1035,7 +939,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1054,12 +958,6 @@ This method is intended for deleting a single Event connector based on Event ID,
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1098,7 +996,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1117,12 +1015,6 @@ This method deletes a sequence flow using the flow ID and process ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1158,7 +1050,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1177,12 +1069,6 @@ This method is deletes a single item using the gateway ID and process ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1218,7 +1104,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1237,12 +1123,6 @@ This method deletes a group using the group ID
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1275,7 +1155,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1294,12 +1174,6 @@ This method deletes the Input/Output based on the Input/Output ID, process ID an
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1338,7 +1212,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1357,12 +1231,6 @@ This method deletes an instance using the instance ID and process ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1398,7 +1266,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1417,12 +1285,6 @@ This method deletes a process using the process ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1455,7 +1317,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1474,12 +1336,6 @@ This method deletes a task using the task ID and process ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1515,7 +1371,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1534,12 +1390,6 @@ This method is intended for deleting a single Task connector based on Task ID, P
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1578,7 +1428,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1597,12 +1447,6 @@ This method deletes a user from the system.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1635,7 +1479,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1654,12 +1498,6 @@ This method starts/triggers an event.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1698,7 +1536,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1711,18 +1549,12 @@ Name | Type | Description  | Notes
 
 
 
-This method is retrieves a client based on its ID.
+This method is retrieves an Oauth client based on its ID.
 
 ### Example
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1758,7 +1590,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1777,12 +1609,6 @@ This method retrieves all existing clients belonging to an user.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1821,7 +1647,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1840,12 +1666,6 @@ This method returns the instance DataModel and lets the user work with it direct
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1887,7 +1707,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1906,12 +1726,6 @@ This method retrieves an event using its ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -1947,7 +1761,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -1966,12 +1780,6 @@ This method returns all Event connectors related to the run Process and Event.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2010,7 +1818,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2029,12 +1837,6 @@ This method returns all Event connectors related to the run Process and Event.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2076,7 +1878,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2095,12 +1897,6 @@ This method returns all events related to the runned process
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2139,7 +1935,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2158,12 +1954,6 @@ This method retrieves a flow based on its ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2199,7 +1989,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2218,12 +2008,6 @@ This method retrieves all existing flows.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2262,7 +2046,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2281,12 +2065,6 @@ This method retrieves a gateway based on its ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2322,7 +2100,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2341,12 +2119,6 @@ This method retrieves all existing gateways.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2385,7 +2157,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2404,12 +2176,6 @@ This method retrieves a group using its ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2442,7 +2208,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2461,12 +2227,6 @@ This method retrieves all existing groups.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2502,7 +2262,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2521,12 +2281,6 @@ This method retrieves an Input/Output object using its ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2565,7 +2319,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2584,12 +2338,6 @@ This method retrieves all existing Input/Output objects in the related task inst
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2631,7 +2379,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2650,12 +2398,6 @@ This method retrieves an instance using its ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2691,7 +2433,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2710,12 +2452,6 @@ This method retrieves related to the process using  the Process ID
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2754,7 +2490,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2773,12 +2509,6 @@ This method retrieves a process using its ID
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2811,7 +2541,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2830,12 +2560,6 @@ This method retrieves all existing processes.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2871,7 +2595,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2890,12 +2614,6 @@ This method is retrieves a task using its ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2931,7 +2649,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -2950,12 +2668,6 @@ This method is intended for retrieving an Task connector based on it&#39;s ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -2994,7 +2706,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3013,12 +2725,6 @@ This method returns all Task connectors related to the run Process and Task.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3060,7 +2766,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3079,12 +2785,6 @@ This method retrieves a task instance based on its ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3123,7 +2823,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3142,12 +2842,6 @@ This method retrieves all existing task instances
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3183,7 +2877,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3202,12 +2896,6 @@ This method is intended for returning a list of all Tasks related to the process
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3246,7 +2934,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3265,12 +2953,6 @@ This method returns a user using its ID.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3303,7 +2985,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3322,12 +3004,6 @@ This method returs all existing users in the system.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3363,7 +3039,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3382,12 +3058,6 @@ This method imports BPMN files. A new process is created when import is successf
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3420,7 +3090,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3439,12 +3109,6 @@ This method returns user information using a token
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3480,7 +3144,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3499,12 +3163,6 @@ This method removes groups from a task
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3543,7 +3201,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3562,12 +3220,6 @@ This method removes one or more users from a group.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3603,7 +3255,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3622,12 +3274,6 @@ This method synchronizes a one or more groups with a task.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3666,7 +3312,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3685,12 +3331,6 @@ This method synchronizes one or more users with a group.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3726,7 +3366,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3739,18 +3379,12 @@ Name | Type | Description  | Notes
 
 
 
-This method updates an existing client.
+This method updates an existing Oauth client.
 
 ### Example
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3789,7 +3423,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3808,12 +3442,6 @@ This method updates an existing event
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3852,7 +3480,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3871,12 +3499,6 @@ This method lets update the existing Event connector with new parameters values
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3918,7 +3540,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -3937,12 +3559,6 @@ This method updates an existing flow.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -3981,7 +3597,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -4000,12 +3616,6 @@ This method updates an existing gateway.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -4044,7 +3654,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -4063,12 +3673,6 @@ This method updates an existing group.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -4104,7 +3708,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -4123,12 +3727,6 @@ This method updates an existing Input/Output object.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -4170,7 +3768,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -4189,12 +3787,6 @@ This method updates  an existing instance.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -4233,7 +3825,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -4252,12 +3844,6 @@ This method updates an existing process.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -4293,7 +3879,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -4312,12 +3898,6 @@ This method is intended for updating an existing task.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -4356,7 +3936,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -4375,12 +3955,6 @@ This method lets update the existing Task connector with new parameters values
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -4422,7 +3996,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -4441,12 +4015,6 @@ This method updates an existing task instance.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -4482,7 +4050,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 
@@ -4501,12 +4069,6 @@ This method updates an existing user.
 ```javascript
 var ProcessMakerApi = require('process_maker_api');
 var defaultClient = ProcessMakerApi.ApiClient.default;
-
-// Configure API key authorization: internalApiKey
-var internalApiKey = defaultClient.authentications['internalApiKey'];
-internalApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//internalApiKey.apiKeyPrefix = 'Token';
 
 // Configure OAuth2 access token for authorization: PasswordGrant
 var PasswordGrant = defaultClient.authentications['PasswordGrant'];
@@ -4542,7 +4104,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[internalApiKey](../README.md#internalApiKey), [PasswordGrant](../README.md#PasswordGrant)
+[PasswordGrant](../README.md#PasswordGrant)
 
 ### HTTP request headers
 

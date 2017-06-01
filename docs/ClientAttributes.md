@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **personalAccessClient** | **Boolean** |  | [optional] 
 **passwordClient** | **Boolean** |  | [optional] 
 **revoked** | **Boolean** |  | [optional] 
-**createdAt** | [**Date**](DateTime.md) |  | [optional] 
-**updatedAt** | [**Date**](DateTime.md) |  | [optional] 
+**createdAt** | **String** |  | [optional] 
+**updatedAt** | **String** |  | [optional] 
 
 

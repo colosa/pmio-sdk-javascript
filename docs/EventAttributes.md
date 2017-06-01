@@ -14,9 +14,9 @@ Name | Type | Description | Notes
 **time** | **String** |  | [optional] 
 **duration** | **String** |  | [optional] 
 **cycle** | **String** |  | [optional] 
-**attachedToTaskId** | **Number** |  | [optional] 
-**createdAt** | [**Date**](DateTime.md) |  | [optional] 
-**updatedAt** | [**Date**](DateTime.md) |  | [optional] 
+**attachedToTaskId** | **String** |  | [optional] 
+**createdAt** | **String** |  | [optional] 
+**updatedAt** | **String** |  | [optional] 
 
 
 <a name="TypeEnum"></a>

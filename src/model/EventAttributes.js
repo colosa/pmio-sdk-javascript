@@ -25,18 +25,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DateTime'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./DateTime'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.ProcessMakerApi) {
       root.ProcessMakerApi = {};
     }
-    root.ProcessMakerApi.EventAttributes = factory(root.ProcessMakerApi.ApiClient, root.ProcessMakerApi.DateTime);
+    root.ProcessMakerApi.EventAttributes = factory(root.ProcessMakerApi.ApiClient);
   }
-}(this, function(ApiClient, DateTime) {
+}(this, function(ApiClient) {
   'use strict';
 
 
@@ -121,13 +121,13 @@
         obj['cycle'] = ApiClient.convertToType(data['cycle'], 'String');
       }
       if (data.hasOwnProperty('attached_to_task_id')) {
-        obj['attached_to_task_id'] = ApiClient.convertToType(data['attached_to_task_id'], 'Number');
+        obj['attached_to_task_id'] = ApiClient.convertToType(data['attached_to_task_id'], 'String');
       }
       if (data.hasOwnProperty('created_at')) {
-        obj['created_at'] = 'Date'.constructFromObject(data['created_at']);
+        obj['created_at'] = ApiClient.convertToType(data['created_at'], 'String');
       }
       if (data.hasOwnProperty('updated_at')) {
-        obj['updated_at'] = 'Date'.constructFromObject(data['updated_at']);
+        obj['updated_at'] = ApiClient.convertToType(data['updated_at'], 'String');
       }
     }
     return obj;
@@ -178,15 +178,15 @@
    */
   exports.prototype['cycle'] = undefined;
   /**
-   * @member {Number} attached_to_task_id
+   * @member {String} attached_to_task_id
    */
   exports.prototype['attached_to_task_id'] = undefined;
   /**
-   * @member {module:model/Date} created_at
+   * @member {String} created_at
    */
   exports.prototype['created_at'] = undefined;
   /**
-   * @member {module:model/Date} updated_at
+   * @member {String} updated_at
    */
   exports.prototype['updated_at'] = undefined;
 

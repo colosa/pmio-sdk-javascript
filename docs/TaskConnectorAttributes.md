@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **inputParameters** | **String** |  | [optional] [default to &#39;[]&#39;]
 **outputParameters** | **String** |  | [optional] [default to &#39;[]&#39;]
 **asyncBefore** | **Boolean** |  | [optional] 
-**createdAt** | [**Date**](DateTime.md) |  | [optional] 
-**updatedAt** | [**Date**](DateTime.md) |  | [optional] 
+**createdAt** | **String** |  | [optional] 
+**updatedAt** | **String** |  | [optional] 
 
 

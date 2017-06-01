@@ -65,9 +65,9 @@
      */
 
     /**
-     * This method creates a new client for the user
-     * @param {String} userId ID of the user related to the client
-     * @param {module:model/ClientCreateItem} clientCreateItem JSON API with the Client object to add
+     * This method creates a new Oauth client for the user
+     * @param {String} userId ID of the user related to the Oauth client
+     * @param {module:model/ClientCreateItem} clientCreateItem JSON API with the Oauth Client object to add
      * @param {module:api/ProcessmakerApi~addClientCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ClientItem}
      */
@@ -95,7 +95,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ClientItem;
@@ -146,7 +146,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = EventItem;
@@ -204,7 +204,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = EventConnector1;
@@ -255,7 +255,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = FlowItem;
@@ -306,7 +306,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = GatewayItem;
@@ -350,7 +350,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = GroupItem;
@@ -408,7 +408,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -466,7 +466,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = InputOutputItem;
@@ -517,7 +517,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = InstanceItem;
@@ -561,7 +561,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ProcessItem;
@@ -612,7 +612,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = TaskItem;
@@ -670,7 +670,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = TaskConnector1;
@@ -714,7 +714,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = UserItem;
@@ -765,7 +765,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -786,7 +786,7 @@
      */
 
     /**
-     * This method deletes a client using the client and user IDs.
+     * This method deletes an Oauth client using the client and user IDs.
      * @param {String} userId User ID
      * @param {String} clientId ID of client to delete
      * @param {module:api/ProcessmakerApi~deleteClientCallback} callback The callback function, accepting three arguments: error, data, response
@@ -817,7 +817,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -869,7 +869,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -928,7 +928,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -980,7 +980,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -1032,7 +1032,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -1077,7 +1077,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -1136,7 +1136,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -1188,7 +1188,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -1233,7 +1233,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -1285,7 +1285,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -1344,7 +1344,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -1389,7 +1389,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -1447,7 +1447,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = DataModelItem1;
@@ -1468,7 +1468,7 @@
      */
 
     /**
-     * This method is retrieves a client based on its ID.
+     * This method is retrieves an Oauth client based on its ID.
      * @param {String} userId ID of user to retrieve
      * @param {String} clientId ID of client to retrieve
      * @param {module:api/ProcessmakerApi~findClientByIdCallback} callback The callback function, accepting three arguments: error, data, response
@@ -1499,7 +1499,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ClientItem;
@@ -1550,7 +1550,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ClientCollection;
@@ -1608,7 +1608,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = DataModelItem1;
@@ -1660,7 +1660,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = EventItem;
@@ -1719,7 +1719,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = EventConnector1;
@@ -1777,7 +1777,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = EventConnectorsCollection;
@@ -1828,7 +1828,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = EventCollection;
@@ -1880,7 +1880,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = FlowItem;
@@ -1931,7 +1931,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = FlowCollection;
@@ -1983,7 +1983,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = GatewayItem;
@@ -2034,7 +2034,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = GatewayCollection;
@@ -2079,7 +2079,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = GroupItem;
@@ -2123,7 +2123,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = GroupCollection;
@@ -2182,7 +2182,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = InputOutputItem;
@@ -2240,7 +2240,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = InputOutputCollection;
@@ -2292,7 +2292,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = InstanceItem;
@@ -2343,7 +2343,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = InstanceCollection;
@@ -2388,7 +2388,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ProcessItem;
@@ -2432,7 +2432,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ProcessCollection;
@@ -2484,7 +2484,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = TaskItem;
@@ -2543,7 +2543,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = TaskConnector1;
@@ -2601,7 +2601,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = TaskConnectorsCollection;
@@ -2652,7 +2652,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = InlineResponse200;
@@ -2696,7 +2696,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = TaskInstanceCollection;
@@ -2747,7 +2747,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = TaskCollection;
@@ -2792,7 +2792,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = UserItem;
@@ -2836,7 +2836,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = UserCollection;
@@ -2880,7 +2880,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ProcessCollection1;
@@ -2924,7 +2924,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = UserItem;
@@ -2982,7 +2982,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -3033,7 +3033,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -3091,7 +3091,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -3142,7 +3142,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ResultSuccess;
@@ -3163,7 +3163,7 @@
      */
 
     /**
-     * This method updates an existing client.
+     * This method updates an existing Oauth client.
      * @param {String} userId ID of user to retrieve
      * @param {String} clientId ID of client to retrieve
      * @param {module:model/ClientUpdateItem} clientUpdateItem Client object to edit
@@ -3200,7 +3200,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ClientItem;
@@ -3258,7 +3258,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = EventItem;
@@ -3323,7 +3323,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = EventConnector1;
@@ -3381,7 +3381,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = FlowItem;
@@ -3439,7 +3439,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = GatewayItem;
@@ -3490,7 +3490,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = GroupItem;
@@ -3555,7 +3555,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = InputOutputItem;
@@ -3613,7 +3613,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = InstanceItem;
@@ -3664,7 +3664,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = ProcessItem;
@@ -3722,7 +3722,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = TaskItem;
@@ -3787,7 +3787,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = TaskConnector1;
@@ -3838,7 +3838,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = InlineResponse200;
@@ -3889,7 +3889,7 @@
       var formParams = {
       };
 
-      var authNames = ['internalApiKey', 'PasswordGrant'];
+      var authNames = ['PasswordGrant'];
       var contentTypes = ['application/vnd.api+json'];
       var accepts = ['application/vnd.api+json'];
       var returnType = UserItem;

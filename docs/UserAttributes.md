@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **firstname** | **String** |  | 
 **lastname** | **String** |  | 
 **email** | **String** |  | 
-**expireDate** | [**Date**](DateTime.md) |  | [optional] 
+**expiresAt** | **String** |  | [optional] 
 **status** | **String** |  | [optional] [default to &#39;ACTIVE&#39;]
 **country** | **String** |  | [optional] 
 **city** | **String** |  | [optional] 
@@ -20,12 +20,12 @@ Name | Type | Description | Notes
 **zipCode** | **String** |  | [optional] 
 **position** | **String** |  | [optional] 
 **resume** | **String** |  | [optional] 
-**birthday** | **String** |  | [optional] 
+**birthdayAt** | **String** |  | [optional] 
 **bookmarkStartCases** | **String** |  | [optional] 
 **timeZone** | **String** |  | [optional] 
 **defaultLang** | **String** |  | [optional] [default to &#39;en_US&#39;]
-**createdAt** | [**Date**](DateTime.md) |  | [optional] 
-**updatedAt** | [**Date**](DateTime.md) |  | [optional] 
+**createdAt** | **String** |  | [optional] 
+**updatedAt** | **String** |  | [optional] 
 **clients** | **[Number]** |  | [optional] 
 
 

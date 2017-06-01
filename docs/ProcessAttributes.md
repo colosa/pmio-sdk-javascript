@@ -20,8 +20,8 @@ Name | Type | Description | Notes
 **createUserId** | **String** |  | [optional] 
 **debug** | **Boolean** |  | [optional] [default to false]
 **dynaformSummaryId** | **String** |  | [optional] 
-**createdAt** | [**Date**](DateTime.md) |  | [optional] 
-**updatedAt** | [**Date**](DateTime.md) |  | [optional] 
+**createdAt** | **String** |  | [optional] 
+**updatedAt** | **String** |  | [optional] 
 
 
 <a name="StatusEnum"></a>

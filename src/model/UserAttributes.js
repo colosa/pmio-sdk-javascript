@@ -25,18 +25,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DateTime'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./DateTime'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.ProcessMakerApi) {
       root.ProcessMakerApi = {};
     }
-    root.ProcessMakerApi.UserAttributes = factory(root.ProcessMakerApi.ApiClient, root.ProcessMakerApi.DateTime);
+    root.ProcessMakerApi.UserAttributes = factory(root.ProcessMakerApi.ApiClient);
   }
-}(this, function(ApiClient, DateTime) {
+}(this, function(ApiClient) {
   'use strict';
 
 
@@ -113,8 +113,8 @@
       if (data.hasOwnProperty('email')) {
         obj['email'] = ApiClient.convertToType(data['email'], 'String');
       }
-      if (data.hasOwnProperty('expire_date')) {
-        obj['expire_date'] = 'Date'.constructFromObject(data['expire_date']);
+      if (data.hasOwnProperty('expires_at')) {
+        obj['expires_at'] = ApiClient.convertToType(data['expires_at'], 'String');
       }
       if (data.hasOwnProperty('status')) {
         obj['status'] = ApiClient.convertToType(data['status'], 'String');
@@ -149,8 +149,8 @@
       if (data.hasOwnProperty('resume')) {
         obj['resume'] = ApiClient.convertToType(data['resume'], 'String');
       }
-      if (data.hasOwnProperty('birthday')) {
-        obj['birthday'] = ApiClient.convertToType(data['birthday'], 'String');
+      if (data.hasOwnProperty('birthday_at')) {
+        obj['birthday_at'] = ApiClient.convertToType(data['birthday_at'], 'String');
       }
       if (data.hasOwnProperty('bookmark_start_cases')) {
         obj['bookmark_start_cases'] = ApiClient.convertToType(data['bookmark_start_cases'], 'String');
@@ -162,10 +162,10 @@
         obj['default_lang'] = ApiClient.convertToType(data['default_lang'], 'String');
       }
       if (data.hasOwnProperty('created_at')) {
-        obj['created_at'] = 'Date'.constructFromObject(data['created_at']);
+        obj['created_at'] = ApiClient.convertToType(data['created_at'], 'String');
       }
       if (data.hasOwnProperty('updated_at')) {
-        obj['updated_at'] = 'Date'.constructFromObject(data['updated_at']);
+        obj['updated_at'] = ApiClient.convertToType(data['updated_at'], 'String');
       }
       if (data.hasOwnProperty('clients')) {
         obj['clients'] = ApiClient.convertToType(data['clients'], ['Number']);
@@ -195,9 +195,9 @@
    */
   exports.prototype['email'] = undefined;
   /**
-   * @member {module:model/Date} expire_date
+   * @member {String} expires_at
    */
-  exports.prototype['expire_date'] = undefined;
+  exports.prototype['expires_at'] = undefined;
   /**
    * @member {module:model/UserAttributes.StatusEnum} status
    * @default 'ACTIVE'
@@ -244,9 +244,9 @@
    */
   exports.prototype['resume'] = undefined;
   /**
-   * @member {String} birthday
+   * @member {String} birthday_at
    */
-  exports.prototype['birthday'] = undefined;
+  exports.prototype['birthday_at'] = undefined;
   /**
    * @member {String} bookmark_start_cases
    */
@@ -261,11 +261,11 @@
    */
   exports.prototype['default_lang'] = 'en_US';
   /**
-   * @member {module:model/Date} created_at
+   * @member {String} created_at
    */
   exports.prototype['created_at'] = undefined;
   /**
-   * @member {module:model/Date} updated_at
+   * @member {String} updated_at
    */
   exports.prototype['updated_at'] = undefined;
   /**

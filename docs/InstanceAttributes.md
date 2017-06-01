@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **pin** | **String** |  | [optional] 
 **duration** | **Number** |  | [optional] 
 **status** | **String** |  | [default to &#39;RUNNING&#39;]
-**createdAt** | [**Date**](DateTime.md) |  | [optional] 
-**updatedAt** | [**Date**](DateTime.md) |  | [optional] 
+**createdAt** | **String** |  | [optional] 
+**updatedAt** | **String** |  | [optional] 
 
 
 <a name="StatusEnum"></a>

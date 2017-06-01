@@ -14,8 +14,8 @@ Name | Type | Description | Notes
 **condition** | **String** |  | [optional] 
 **_default** | **Boolean** |  | [default to false]
 **optional** | **Boolean** |  | [default to false]
-**createdAt** | [**Date**](DateTime.md) |  | [optional] 
-**updatedAt** | [**Date**](DateTime.md) |  | [optional] 
+**createdAt** | **String** |  | [optional] 
+**updatedAt** | **String** |  | [optional] 
 
 
 <a name="TypeEnum"></a>

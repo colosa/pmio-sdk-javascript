@@ -26,8 +26,8 @@ Name | Type | Description | Notes
 **selfserviceExecution** | **String** |  | [optional] 
 **lastAssignedUserId** | **String** |  | [optional] 
 **script** | **String** |  | [optional] 
-**createdAt** | [**Date**](DateTime.md) |  | [optional] 
-**updatedAt** | [**Date**](DateTime.md) |  | [optional] 
+**createdAt** | **String** |  | [optional] 
+**updatedAt** | **String** |  | [optional] 
 
 
 <a name="TypeEnum"></a>
